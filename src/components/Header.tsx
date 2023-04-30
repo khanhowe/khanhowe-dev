@@ -8,6 +8,7 @@ const HeaderDiv = styled.header`
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 100;
+    background-color: #2E4F4F;
 `;
 
 const StyledNav = styled.nav`
@@ -20,7 +21,7 @@ const StyledAnchor = styled.a`
     transition: color 0.2s;
     &:hover {
         text-decoration: none;
-        color: red;
+        color: #CBE4DE;
         transition: color 0.2s;
         cursor: pointer;
     }
