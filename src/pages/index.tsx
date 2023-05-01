@@ -5,33 +5,34 @@ import About from './About'
 import Experience from './Experience'
 import Projects from './Project'
 import Contact from './Contact'
-import { createTheme, StyledEngineProvider, ThemeProvider } from '@mui/material'
+import { useState } from 'react'
+import styled, { ThemeProvider } from 'styled-components'
+import createMyTheme from '@/styles/theme'
 
-
-const customTheme = createTheme({
-  palette: {
-    primary: {
-      main: '#0E8388'
-    },
-    secondary: {
-      main: '#2E4F4F'
-    }
-  }
-});
+const StyledPageContainer = styled.div`
+  background-color: ${(props) => props.theme.palette.background.default};
+`;
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [themeMode, setThemeMode] = useState<'light' | 'dark'>('light');
+  const theme = createMyTheme(themeMode);
+
+  const toggleTheme = () => {
+    setThemeMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
+  };
+
   return (
-    <StyledEngineProvider injectFirst>
-      <ThemeProvider theme={customTheme}>
+    <ThemeProvider theme={theme}>
+      <StyledPageContainer>
         <Welcome/>
-        <Header/>
+        <Header onThemeToggle={toggleTheme}/>
         <About/>
         <Experience/>
         <Projects/>
         <Contact/>
-      </ThemeProvider>
-    </StyledEngineProvider>
+      </StyledPageContainer>
+    </ThemeProvider>
   )
 }

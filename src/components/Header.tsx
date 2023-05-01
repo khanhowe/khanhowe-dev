@@ -1,3 +1,5 @@
+import { Button } from '@mui/material';
+import { useState } from 'react';
 import styled from 'styled-components';
 
 const HeaderDiv = styled.header`
@@ -27,16 +29,23 @@ const StyledAnchor = styled.a`
     }
 `;
 
-const Header = () => (
-    <HeaderDiv>
-        <StyledNav>
-            <StyledAnchor>Home</StyledAnchor>
-            <StyledAnchor>About</StyledAnchor>
-            <StyledAnchor>Experience</StyledAnchor>
-            <StyledAnchor>Projects</StyledAnchor>
-            <StyledAnchor>Contact</StyledAnchor>
-        </StyledNav>
-    </HeaderDiv>
-);
+interface HeaderProps {
+    onThemeToggle: () => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ onThemeToggle }) => {
+    return (
+        <HeaderDiv>
+            <Button onClick={onThemeToggle}>Theme</Button>
+            <StyledNav>
+                <StyledAnchor>Home</StyledAnchor>
+                <StyledAnchor>About</StyledAnchor>
+                <StyledAnchor>Experience</StyledAnchor>
+                <StyledAnchor>Projects</StyledAnchor>
+                <StyledAnchor>Contact</StyledAnchor>
+            </StyledNav>
+        </HeaderDiv>
+    );
+}
 
 export default Header;
