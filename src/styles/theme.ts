@@ -12,7 +12,12 @@ const createMyTheme = (mode: 'light' | 'dark') => {
       },
       background: {
         default: mode === 'light' ? '#F6F1E9' : '#000000',
-      }
+      },
+      text: {
+        primary: mode === 'light' ? '#000000' : '#FFFFFF',
+        secondary: mode === 'light' ? '#4A4A4A' : '#BEBEBE',
+      },
+
     },
   });
 };
