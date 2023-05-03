@@ -1,5 +1,4 @@
 import { createContext, useContext, useState } from 'react';
-import createMyTheme from '@/styles/theme';
 import { ThemeChoices } from '@/types/utils';
 
 interface ThemeContextProps {
@@ -28,8 +27,6 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     const toggleTheme = () => {
         setThemeMode((prevMode) => (prevMode === ThemeChoices.light ? ThemeChoices.dark : ThemeChoices.light));
     };
-
-    const theme = createMyTheme(themeMode);
 
     return (
         <ThemeContext.Provider value={{ themeMode, toggleTheme }}>

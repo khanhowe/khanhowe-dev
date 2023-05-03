@@ -1,0 +1,28 @@
+{
+    "experience": [
+        {
+            "title": "Attently Inc.",
+            "start_date": "June 2018",
+            "end_date": "March 2020",
+            "summary": "Designed, developed, and deployed multiple computer vision web applications with Node.js, React, Electron, and AWS infrastructure that deliver statistical feedback of user’s reactions to pieces of media to deliver to customers such as political campaigns and TV show creators with integration with Hulu.",
+            "bullet_points": [
+                "Built, tested, and monitored backend data analysis tools to derive metrics quantifying attention and emotional reactions.",
+                "Developed and integrated frontend interfaces for application user dashboards and chrome extensions.",
+                "Worked closely with colleagues in an Agile environment, reporting to both a project manager and the company’s CEO."
+            ],
+            "location": "Fairbanks, Alaska / Remote"
+        },
+        {
+            "title": "Class Technologies Inc.",
+            "start_date": "January 2021",
+            "end_date": "April 2023",
+            "summary": "Designed, developed, and deployed multiple computer vision web applications with Node.js, React, Electron, and AWS infrastructure that deliver statistical feedback of user’s reactions to pieces of media to deliver to customers such as political campaigns and TV show creators with integration with Hulu.",
+            "bullet_points": [
+                "Built, tested, and monitored backend data analysis tools to derive metrics quantifying attention and emotional reactions.",
+                "Developed and integrated frontend interfaces for application user dashboards and chrome extensions.",
+                "Worked closely with colleagues in an Agile environment, reporting to both a project manager and the company’s CEO."
+            ],
+            "location": "Remote"
+        }
+    ]
+}

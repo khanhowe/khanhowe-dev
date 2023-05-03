@@ -8,18 +8,19 @@ import { useThemeContext } from '@/context/ThemeContext';
 
 const HeaderDiv = styled.header`
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
     position: sticky;
     top: 0;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 100;
-    background-color: #2E4F4F;
+    background-color: ${(props) => props.theme.palette.secondary.main};
 `;
 
 const StyledNav = styled.nav`
     display: flex;
     gap: 1rem;
+    margin-left: auto;
 `;
 
 const StyledAnchor = styled.a`
@@ -57,7 +58,7 @@ const Header: React.FC = () => {
         toggleTheme();
       }
     };
-    
+
     return (
         <HeaderDiv>
             <ToggleButtonGroup value={themeMode} onChange={handleThemeChange}>

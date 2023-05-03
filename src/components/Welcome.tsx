@@ -1,7 +1,8 @@
-import { Button, Icon } from '@mui/material';
+import { Button } from '@mui/material';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import styled from 'styled-components';
 import ProfilePicture from './ProfilePicture';
+import { StyledText } from '@/styles/common-styles';
 
 const StyledDiv = styled.div`
     display: flex;
@@ -21,10 +22,14 @@ const StyledButton = styled(Button)`
 const Welcome: React.FC = () => (
     <StyledDiv>
         <ProfilePicture/>
-        <h1>Hi, I&apos;m Khan.</h1>
-        <h2>I&apos;m a full-stack engineer.</h2>
+            <StyledText variant='h1'>
+                Hi, I&apos;m Khan.
+            </StyledText>
+            <StyledText variant='h2'>
+                I&apos;m a full-stack engineer.
+            </StyledText>
         <StyledButton variant='outlined'>
-            See my work &nbsp;<ArrowDownwardIcon/>
+            <StyledText>See my work &nbsp;</StyledText><ArrowDownwardIcon/>
         </StyledButton>
     </StyledDiv>
 );
