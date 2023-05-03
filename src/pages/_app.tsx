@@ -1,4 +1,4 @@
-// import '@/styles/globals.css'
+import '@/styles/globals.css'
 import { ThemeProvider } from '@/context/ThemeContext'
 import type { AppProps } from 'next/app'
 

@@ -1,11 +1,11 @@
 import { ThemeChoices } from '@/types/utils';
 import { createTheme } from '@mui/material/styles';
 
-const PRIMARY_THEME_COLOR_LIGHT = '#CBE4DE';
-const PRIMARY_THEME_COLOR_DARK = '#1976d2';
+const PRIMARY_THEME_COLOR_LIGHT = '#FF8400';
+const PRIMARY_THEME_COLOR_DARK = '#150050';
 
-const SECONDARY_THEME_COLOR_LIGHT = '#dc004e';
-const SECONDARY_THEME_COLOR_DARK = '#0E8388';
+const SECONDARY_THEME_COLOR_LIGHT = '#FFD93D';
+const SECONDARY_THEME_COLOR_DARK = '#3F0071';
 
 const BACKGROUND_THEME_COLOR_LIGHT = '#F6F1E9';
 const BACKGROUND_THEME_COLOR_DARK = '#000000';

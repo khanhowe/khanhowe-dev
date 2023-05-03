@@ -22,10 +22,10 @@ const StyledButton = styled(Button)`
 const Welcome: React.FC = () => (
     <StyledDiv>
         <ProfilePicture/>
-            <StyledText variant='h1'>
+            <StyledText variant='h3'>
                 Hi, I&apos;m Khan.
             </StyledText>
-            <StyledText variant='h2'>
+            <StyledText variant='h4'>
                 I&apos;m a full-stack engineer.
             </StyledText>
         <StyledButton variant='outlined'>
